@@ -1,8 +1,10 @@
 import Image, { type StaticImageData } from "next/image";
 import { Code2, Sparkles, Star } from "lucide-react";
 import { Reveal } from "@/components/reveal";
+import codeImg from "../../public/images/code.jpg";
 import materialImg from "../../public/images/materialExpressive.png";
 import sparkyImg from "../../public/images/sparkyCL.png";
+import psiconnectImg from "../../public/images/psiconnect.png";
 
 type Row = {
   tag: string;
@@ -18,6 +20,7 @@ const rows: Row[] = [
     title: "Design & Development",
     body: "I started learning to code this year. I want to learn everything about web development so I can build websites and apps for businesses. I'd also love to grow into UI & UX design.",
     tags: ["HTML", "CSS", "JavaScript", "UI Design", "Python"],
+    image: codeImg,
   },
   {
     tag: "Mindset",
@@ -32,6 +35,13 @@ const rows: Row[] = [
     body: "Sparky.CL is a business management website. It's a simple yet effective solution that helps businesses manage their operations and transactions, and engage with their customers.",
     tags: ["Easy to Use", "Works on Any Device", "User-Friendly"],
     image: sparkyImg,
+  },
+  {
+    tag: "Project",
+    title: "PsiConnect",
+    body: "PsiConnect is a psychological wellbeing platform that connects people with mental-health professionals. It offers secure sign-in and a simple, accessible way to book and manage sessions.",
+    tags: ["Secure & Private", "Online Booking", "Accessible"],
+    image: psiconnectImg,
   },
 ];
 
