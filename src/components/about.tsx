@@ -4,22 +4,22 @@ import { Reveal } from "@/components/reveal";
 const cards = [
   {
     icon: Rocket,
-    title: "Fast Learner",
-    body: "I learn fast and can do anything I set my mind to. Started coding this year and I'm already building real projects.",
+    title: "Quick to Adapt",
+    body: "I have a proven ability to acquire new skills efficiently. Since beginning to code this year, I have applied that discipline directly to building functional, real-world projects.",
     accent: false,
     wide: false,
   },
   {
     icon: Heart,
-    title: "Passionate Creator",
-    body: "I love videogames, sports, and building things. My passion for tech drives me to learn something new every single day.",
+    title: "Driven & Disciplined",
+    body: "My interest in technology, strategy games, and competitive sports has shaped a focused, detail-oriented mindset. I bring that same consistency and commitment to every project I take on.",
     accent: true,
     wide: false,
   },
   {
     icon: Lightbulb,
-    title: "Big Goals",
-    body: "One of my primary goals is to become an independent web developer. It has long been an area of interest for me, and I am now actively working toward becoming the developer I have always aspired to be.",
+    title: "Long-Term Vision",
+    body: "My goal is to build a career as an independent web developer. I am pursuing this path deliberately, developing the technical and professional skills required to deliver reliable, high-quality work for clients and businesses.",
     accent: false,
     wide: true,
   },
@@ -34,13 +34,15 @@ export function About() {
           About Me
         </div>
         <h2 className="mb-3 font-display text-[clamp(2rem,3.5vw,2.8rem)] font-black leading-tight text-green-900 dark:text-green-200">
-          Hello. Nice to meet you.
+          A Developer Committed to Continuous Growth
         </h2>
         <p className="max-w-xl text-base leading-relaxed text-muted">
-          I began studying web development this year. I have a strong interest
-          in video games and sports, and I am deeply curious about technology
-          and programming. I am particularly passionate about creating and
-          building solutions for the web.
+          I began studying web development this year with a focus on building
+          practical, professional-grade skills. My background in strategic
+          gaming and competitive sports has instilled a disciplined,
+          detail-oriented approach that I bring to every project. I am
+          dedicated to creating clean, effective, and reliable solutions for
+          the web.
         </p>
       </Reveal>
 
