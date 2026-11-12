@@ -1,38 +1,88 @@
-import { Mail } from "lucide-react";
+import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
 import { Reveal } from "@/components/reveal";
+import { InstagramIcon } from "@/components/brand-icons";
+
+const contactLinks = [
+  {
+    label: "Email",
+    value: "armandocl100@gmail.com",
+    href: "mailto:armandocl100@gmail.com",
+    icon: Mail,
+  },
+  {
+    label: "Instagram",
+    value: "@armando.cardona.5876",
+    href: "https://www.instagram.com/armando.cardona.5876/",
+    icon: InstagramIcon,
+  },
+  {
+    label: "WhatsApp",
+    value: "Start a conversation",
+    href: "https://wa.me/qr/5ETOVBV3H6QZK1",
+    icon: MessageCircle,
+  },
+];
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-20 px-[5vw] py-20 text-center">
-      <Reveal>
-        <div className="mb-4 inline-flex items-center justify-center gap-2 rounded-full border border-green-200 bg-green-50 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-green-700 dark:bg-surface-soft">
-          <Mail className="h-3.5 w-3.5" />
-          Contact
-        </div>
-      </Reveal>
+    <section id="contact" className="bg-[#222831] py-20 text-[#EEEEEE] sm:py-28">
+      <div className="section-shell">
+        <Reveal>
+          <div className="grid gap-12 lg:grid-cols-[0.62fr_0.38fr] lg:gap-20">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#DFD0B8]">
+                Contact / New projects
+              </p>
+              <h2 className="mt-6 max-w-4xl text-balance text-[clamp(3.2rem,7vw,7.5rem)] font-semibold leading-[0.9] tracking-[-0.065em]">
+                Let&apos;s build
+                <span className="block font-display font-normal italic tracking-[-0.035em] text-[#DFD0B8]">
+                  something great.
+                </span>
+              </h2>
+              <p className="mt-8 max-w-2xl text-base leading-7 text-white/65 sm:text-lg sm:leading-8">
+                Have a website, digital platform, or software project in mind?
+                I&apos;m open to thoughtful collaborations and practical ideas that
+                deserve a clear, well-built digital experience.
+              </p>
+              <a
+                href="mailto:armandocl100@gmail.com"
+                className="group mt-9 inline-flex min-h-12 items-center gap-3 rounded-xl bg-[#DFD0B8] px-5 py-3 text-sm font-bold text-[#222831] transition-all hover:-translate-y-0.5 hover:bg-[#EEEEEE] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                Email me
+                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+            </div>
 
-      <Reveal>
-        <div className="relative mx-auto max-w-2xl overflow-hidden rounded-[40px] bg-primary px-12 py-16">
-          <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/[0.08]" />
-          <div className="absolute -bottom-24 -left-16 h-60 w-60 rounded-full bg-white/[0.06]" />
-
-          <h2 className="relative z-10 mb-3 font-display text-[clamp(1.8rem,3vw,2.4rem)] font-black text-white">
-            Let&apos;s Build Something Together.
-          </h2>
-          <p className="relative z-10 mx-auto mb-8 max-w-md leading-relaxed text-white/75">
-            If you are interested in developing a professional website for your
-            business, feel free to get in touch. Email me to discuss how I can
-            help bring your ideas to life.
-          </p>
-          <a
-            href="mailto:armandocl100@gmail.com"
-            className="relative z-10 inline-flex items-center gap-2.5 rounded-full bg-white px-9 py-4 text-base font-extrabold text-green-800 shadow-xl transition-transform hover:scale-105"
-          >
-            <Mail className="h-[18px] w-[18px] text-green-800" />
-            Contact Me
-          </a>
-        </div>
-      </Reveal>
+            <div className="self-end border-t border-white/15">
+              {contactLinks.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target={link.href.startsWith("http") ? "_blank" : undefined}
+                    rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className="group grid grid-cols-[auto_1fr_auto] items-center gap-4 border-b border-white/15 py-5 transition-colors hover:text-[#DFD0B8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFD0B8]"
+                  >
+                    <span className="grid h-10 w-10 place-items-center rounded-xl border border-white/15">
+                      <Icon className="h-4 w-4" />
+                    </span>
+                    <span>
+                      <span className="block font-mono text-[9px] uppercase tracking-[0.18em] text-white/45">
+                        {link.label}
+                      </span>
+                      <span className="mt-1 block break-all text-sm font-semibold sm:text-base">
+                        {link.value}
+                      </span>
+                    </span>
+                    <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </Reveal>
+      </div>
     </section>
   );
 }

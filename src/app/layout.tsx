@@ -1,44 +1,60 @@
 import type { Metadata } from "next";
-import { Nunito, Space_Grotesk } from "next/font/google";
+import { IBM_Plex_Mono, Instrument_Serif, Manrope } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const nunito = Nunito({
-  variable: "--font-nunito",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
   subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-plex-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://armandocardona.dev"),
-  title: "Armando Cardona Lara — Web Developer",
+  metadataBase: new URL(
+    "https://portfolio-sigma-sandy-am3oyn5c1v.vercel.app",
+  ),
+  title: "Armando Cardona Lara | Web & Software Developer",
   description:
-    "Armando Cardona Lara — an aspiring web developer building clean, modern websites and apps for businesses. Available for projects.",
+    "Portfolio of Armando Cardona Lara, a web and software developer creating responsive websites, data platforms, and practical digital products.",
   keywords: [
     "Armando Cardona Lara",
     "Web Developer",
-    "Frontend Developer",
+    "Software Developer",
+    "Next.js Developer",
     "Portfolio",
-    "Next.js",
-    "React",
+    "Mexico",
   ],
   authors: [{ name: "Armando Cardona Lara" }],
+  creator: "Armando Cardona Lara",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Armando Cardona Lara — Web Developer",
+    title: "Armando Cardona Lara | Web & Software Developer",
     description:
-      "An aspiring web developer building clean, modern websites and apps for businesses.",
+      "Responsive websites, web applications, and software platforms built with clarity, performance, and purpose.",
     type: "website",
     locale: "en_US",
+    url: "/",
+    siteName: "Armando Cardona Lara — Portfolio",
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Armando Cardona Lara — Web Developer",
+    title: "Armando Cardona Lara | Web & Software Developer",
     description:
-      "An aspiring web developer building clean, modern websites and apps for businesses.",
+      "Responsive websites, web applications, and software platforms built with clarity, performance, and purpose.",
+    images: ["/opengraph-image"],
   },
 };
 
@@ -51,12 +67,12 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${nunito.variable} ${spaceGrotesk.variable}`}
+      className={`${manrope.variable} ${instrumentSerif.variable} ${ibmPlexMono.variable}`}
     >
       <body className="min-h-screen font-sans antialiased">
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >

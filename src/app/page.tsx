@@ -1,19 +1,21 @@
-import { Navbar } from "@/components/navbar";
+import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
-import { Skills } from "@/components/skills";
+import { Projects } from "@/components/projects";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main>
+      <a className="skip-link" href="#main-content">
+        Skip to content
+      </a>
+      <Header />
+      <main id="main-content">
         <Hero />
         <About />
-        <div className="mx-[5vw] h-px bg-border" />
-        <Skills />
+        <Projects />
         <Contact />
       </main>
       <Footer />

@@ -9,12 +9,10 @@ export function ThemeToggle() {
   return (
     <button
       type="button"
-      aria-label="Toggle dark mode"
+      aria-label="Toggle color theme"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-on-container transition-colors hover:bg-surface-soft"
+      className="grid h-10 w-10 place-items-center rounded-xl border border-white/15 text-[#EEEEEE] transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFD0B8]"
     >
-      {/* Both icons render; CSS reveals the right one via the .dark class,
-          so there's no hydration mismatch and no mounted-state effect. */}
       <Sun className="hidden h-5 w-5 dark:block" />
       <Moon className="h-5 w-5 dark:hidden" />
     </button>

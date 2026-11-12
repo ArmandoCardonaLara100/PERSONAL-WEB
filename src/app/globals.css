@@ -1,116 +1,158 @@
 @import "tailwindcss";
 
-/* next-themes toggles a `.dark` class on <html> */
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #f9fdf9;
-  --foreground: #1a1c1a;
-  --card: #ffffff;
-  --card-foreground: #1a1c1a;
-  --muted: #5e6b5a;
-  --border: #c8e6c9;
-  --surface-soft: #e8f5e9;
-  --primary: #2e7d32;
-  --primary-hover: #388e3c;
-  --primary-foreground: #ffffff;
-  --primary-container: #c8e6c9;
-  --on-container: #1b5e20;
-  --ring: #66bb6a;
-  --nav-bg: rgba(249, 253, 249, 0.82);
+  --background: #eeeeee;
+  --foreground: #222831;
+  --card: #f7f5f1;
+  --muted: #656b72;
+  --border: rgba(34, 40, 49, 0.16);
+  --surface: #e7e1d8;
+  --accent: #dfd0b8;
+  --accent-strong: #756a5b;
 }
 
 .dark {
-  --background: #0c120d;
-  --foreground: #e4efe4;
-  --card: #131d15;
-  --card-foreground: #e4efe4;
-  --muted: #9bab96;
-  --border: #243a26;
-  --surface-soft: #16231a;
-  --primary: #6dce72;
-  --primary-hover: #8bd98f;
-  --primary-foreground: #07210a;
-  --primary-container: #1e3322;
-  --on-container: #a5d6a7;
-  --ring: #66bb6a;
-  --nav-bg: rgba(12, 18, 13, 0.8);
+  --background: #181d24;
+  --foreground: #eeeeee;
+  --card: #222831;
+  --muted: #b5b2ad;
+  --border: rgba(238, 238, 238, 0.14);
+  --surface: #20262f;
+  --accent: #948979;
+  --accent-strong: #dfd0b8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
   --color-muted: var(--muted);
   --color-border: var(--border);
-  --color-surface-soft: var(--surface-soft);
-  --color-primary: var(--primary);
-  --color-primary-hover: var(--primary-hover);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary-container: var(--primary-container);
-  --color-on-container: var(--on-container);
-  --color-ring: var(--ring);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-instrument-serif), ui-serif, Georgia, serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+}
 
-  /* fixed green scale */
-  --color-green-50: #e8f5e9;
-  --color-green-100: #c8e6c9;
-  --color-green-200: #a5d6a7;
-  --color-green-300: #81c784;
-  --color-green-400: #66bb6a;
-  --color-green-500: #4caf50;
-  --color-green-600: #43a047;
-  --color-green-700: #388e3c;
-  --color-green-800: #2e7d32;
-  --color-green-900: #1b5e20;
-
-  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
 }
 
 body {
+  min-width: 320px;
+  overflow-x: hidden;
   background: var(--background);
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 }
 
-/* ───── Decorative bits ───── */
-.gradient-text {
-  background: linear-gradient(135deg, var(--color-green-400), var(--color-green-700));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+::selection {
+  background: #dfd0b8;
+  color: #222831;
 }
 
-@keyframes blobMorph {
-  0%, 100% { border-radius: 60% 40% 70% 30% / 50% 60% 40% 60%; }
-  50% { border-radius: 30% 60% 40% 70% / 60% 40% 60% 40%; }
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
 }
-.animate-blob { animation: blobMorph 8s ease-in-out infinite; }
 
-@keyframes spinSlow {
-  to { transform: rotate(360deg); }
+.section-shell {
+  width: min(100% - 2rem, 1280px);
+  margin-inline: auto;
 }
-.animate-spin-slow { animation: spinSlow 20s linear infinite; }
-.animate-spin-slow-reverse { animation: spinSlow 20s linear infinite reverse; }
 
-@keyframes pulseDot {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.4); opacity: 0.6; }
+.section-space {
+  padding-block: clamp(5.5rem, 10vw, 9rem);
 }
-.pulse-dot { animation: pulseDot 2s ease-in-out infinite; }
+
+.section-kicker {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.section-title {
+  max-width: 60rem;
+  font-size: clamp(2.75rem, 6vw, 6.5rem);
+  font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  text-wrap: balance;
+}
+
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(238, 238, 238, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(238, 238, 238, 0.07) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-160%);
+  border-radius: 0.75rem;
+  background: #dfd0b8;
+  padding: 0.75rem 1rem;
+  color: #222831;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (min-width: 640px) {
+  .section-shell {
+    width: min(100% - 3rem, 1280px);
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-blob,
-  .animate-spin-slow,
-  .animate-spin-slow-reverse,
-  .pulse-dot {
-    animation: none;
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
