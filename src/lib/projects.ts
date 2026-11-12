@@ -1,7 +1,6 @@
 import type { StaticImageData } from "next/image";
 import arqcaImage from "../../public/images/projects/arqca.png";
 import crdnImage from "../../public/images/projects/crdn.png";
-import leilaniImage from "../../public/images/projects/leilani.png";
 import psiConnectImage from "../../public/images/projects/psiconnect.png";
 import tradeDataImage from "../../public/images/projects/tradedata.png";
 import sparkyImage from "../../public/images/sparkyCL.png";
@@ -92,19 +91,6 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Zod"],
     highlights: ["Client and ticket management", "PDF billing", "Role-based access"],
     githubUrl: "https://github.com/ArmandoCardonaLara100/SPARKY-CL",
-    layout: "standard",
-  },
-  {
-    number: "06",
-    name: "Leilani",
-    category: "Private interactive experience",
-    description:
-      "A password-gated, media-rich digital keepsake built as a responsive narrative experience with personal galleries, video, and carefully choreographed interactions.",
-    image: leilaniImage,
-    imageAlt: "Leilani password-gated interactive letter experience",
-    stack: ["HTML", "CSS", "JavaScript", "Responsive media"],
-    highlights: ["Gated access", "Photo and video galleries", "Mobile-first experience"],
-    liveUrl: "https://leilani-rust.vercel.app",
     layout: "standard",
   },
 ];

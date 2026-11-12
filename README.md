@@ -21,6 +21,14 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## Editable HTML mirror
+
+`portfolio.html` is a standalone, manually editable mirror of the production
+portfolio. Open it directly in a browser from the repository root to preview
+the HTML/CSS/JavaScript version locally. The Next.js application remains the
+production source of truth; keep both versions aligned when content or design
+changes are requested.
+
 ## Validation
 
 ```bash
