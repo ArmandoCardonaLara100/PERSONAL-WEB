@@ -25,35 +25,35 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     "https://portfolio-sigma-sandy-am3oyn5c1v.vercel.app",
   ),
-  title: "Armando Cardona Lara | Web & Software Developer",
+  title: "Armando Cardona Lara | Desarrollador web y de software",
   description:
-    "Portfolio of Armando Cardona Lara, a web and software developer creating responsive websites, data platforms, and practical digital products.",
+    "Portafolio de Armando Cardona Lara, desarrollador web y de software que crea sitios responsivos, plataformas de datos y productos digitales prácticos.",
   keywords: [
     "Armando Cardona Lara",
-    "Web Developer",
-    "Software Developer",
-    "Next.js Developer",
-    "Portfolio",
-    "Mexico",
+    "Desarrollador web",
+    "Desarrollador de software",
+    "Desarrollador Next.js",
+    "Portafolio",
+    "México",
   ],
   authors: [{ name: "Armando Cardona Lara" }],
   creator: "Armando Cardona Lara",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Armando Cardona Lara | Web & Software Developer",
+    title: "Armando Cardona Lara | Desarrollador web y de software",
     description:
-      "Responsive websites, web applications, and software platforms built with clarity, performance, and purpose.",
+      "Sitios responsivos, aplicaciones web y plataformas de software construidas con claridad, rendimiento y propósito.",
     type: "website",
-    locale: "en_US",
+    locale: "es_MX",
     url: "/",
-    siteName: "Armando Cardona Lara — Portfolio",
+    siteName: "Armando Cardona Lara — Portafolio",
     images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Armando Cardona Lara | Web & Software Developer",
+    title: "Armando Cardona Lara | Desarrollador web y de software",
     description:
-      "Responsive websites, web applications, and software platforms built with clarity, performance, and purpose.",
+      "Sitios responsivos, aplicaciones web y plataformas de software construidas con claridad, rendimiento y propósito.",
     images: ["/opengraph-image"],
   },
 };
@@ -65,7 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es-MX"
       suppressHydrationWarning
       className={`${manrope.variable} ${instrumentSerif.variable} ${ibmPlexMono.variable}`}
     >

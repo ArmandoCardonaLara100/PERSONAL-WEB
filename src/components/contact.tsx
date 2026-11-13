@@ -4,7 +4,7 @@ import { InstagramIcon } from "@/components/brand-icons";
 
 const contactLinks = [
   {
-    label: "Email",
+    label: "Correo electrónico",
     value: "armandocl100@gmail.com",
     href: "mailto:armandocl100@gmail.com",
     icon: Mail,
@@ -17,7 +17,7 @@ const contactLinks = [
   },
   {
     label: "WhatsApp",
-    value: "Start a conversation",
+    value: "Iniciar una conversación",
     href: "https://wa.me/qr/5ETOVBV3H6QZK1",
     icon: MessageCircle,
   },
@@ -31,24 +31,25 @@ export function Contact() {
           <div className="grid gap-12 lg:grid-cols-[0.62fr_0.38fr] lg:gap-20">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#DFD0B8]">
-                Contact / New projects
+                Contacto / Nuevos proyectos
               </p>
               <h2 className="mt-6 max-w-4xl text-balance text-[clamp(3.2rem,7vw,7.5rem)] font-semibold leading-[0.9] tracking-[-0.065em]">
-                Let&apos;s build
+                Construyamos
                 <span className="block font-display font-normal italic tracking-[-0.035em] text-[#DFD0B8]">
-                  something great.
+                  algo increíble.
                 </span>
               </h2>
               <p className="mt-8 max-w-2xl text-base leading-7 text-white/65 sm:text-lg sm:leading-8">
-                Have a website, digital platform, or software project in mind?
-                I&apos;m open to thoughtful collaborations and practical ideas that
-                deserve a clear, well-built digital experience.
+                ¿Tienes en mente un sitio web, una plataforma digital o un
+                proyecto de software? Estoy abierto a colaboraciones
+                cuidadosas e ideas prácticas que merezcan una experiencia
+                digital clara y bien construida.
               </p>
               <a
                 href="mailto:armandocl100@gmail.com"
                 className="group mt-9 inline-flex min-h-12 items-center gap-3 rounded-xl bg-[#DFD0B8] px-5 py-3 text-sm font-bold text-[#222831] transition-all hover:-translate-y-0.5 hover:bg-[#EEEEEE] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
               >
-                Email me
+                Envíame un correo
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
             </div>

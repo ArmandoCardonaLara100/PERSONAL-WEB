@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Armando Cardona Lara — Web and Software Developer";
+export const alt = "Armando Cardona Lara — Desarrollador web y de software";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -31,7 +31,7 @@ export default function OpenGraphImage() {
           }}
         >
           <span>Armando Cardona Lara</span>
-          <span>Portfolio / 2026</span>
+          <span>Portafolio / 2026</span>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
           <div
@@ -44,10 +44,10 @@ export default function OpenGraphImage() {
               letterSpacing: "-0.05em",
             }}
           >
-            Digital products, built with intent.
+            Productos digitales, construidos con intención.
           </div>
           <div style={{ display: "flex", fontSize: 24, color: "#948979" }}>
-            Web Developer &amp; Software Developer
+            Desarrollador web y de software
           </div>
         </div>
         <div

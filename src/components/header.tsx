@@ -5,11 +5,11 @@ import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "#home", label: "Inicio" },
+  { href: "#about", label: "Sobre mí" },
+  { href: "#skills", label: "Habilidades" },
+  { href: "#projects", label: "Proyectos" },
+  { href: "#contact", label: "Contacto" },
 ];
 
 export function Header() {
@@ -47,7 +47,7 @@ export function Header() {
         <a
           href="#home"
           className="inline-flex items-center gap-3 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFD0B8]"
-          aria-label="Armando Cardona Lara — home"
+          aria-label="Armando Cardona Lara — inicio"
         >
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-[#DFD0B8] font-mono text-[11px] font-bold text-[#222831]">
             AC
@@ -88,12 +88,12 @@ export function Header() {
             href="#contact"
             className="hidden rounded-xl bg-[#DFD0B8] px-4 py-2.5 text-sm font-bold text-[#222831] transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EEEEEE] md:inline-flex"
           >
-            Start a conversation
+            Iniciar una conversación
           </a>
           <ThemeToggle />
           <button
             type="button"
-            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={menuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
             aria-expanded={menuOpen}
             aria-controls="mobile-navigation"
             onClick={() => setMenuOpen((open) => !open)}

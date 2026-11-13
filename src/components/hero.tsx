@@ -3,7 +3,7 @@ import { ArrowDownRight, ArrowUpRight, MapPin } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import armandoImage from "../../public/images/armando.jpg";
 
-const focusAreas = ["Web applications", "Software platforms", "Responsive interfaces"];
+const focusAreas = ["Aplicaciones web", "Plataformas de software", "Interfaces responsivas"];
 
 export function Hero() {
   return (
@@ -17,11 +17,11 @@ export function Hero() {
           <div className="mb-10 flex flex-wrap items-center justify-between gap-4 border-b border-white/15 pb-5 font-mono text-[11px] uppercase tracking-[0.18em] text-white/55">
             <span>Armando Cardona Lara</span>
             <span className="inline-flex items-center gap-2">
-              <MapPin className="h-3.5 w-3.5" /> Mexico
+              <MapPin className="h-3.5 w-3.5" /> México
             </span>
             <span className="inline-flex items-center gap-2 text-[#DFD0B8]">
               <span className="h-1.5 w-1.5 rounded-full bg-[#DFD0B8]" />
-              Available for selected projects
+              Disponible para proyectos seleccionados
             </span>
           </div>
         </Reveal>
@@ -30,37 +30,37 @@ export function Hero() {
           <div>
             <Reveal delay={0.05}>
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-[#DFD0B8]">
-                Web Developer &amp; Software Developer
+                Desarrollador web y de software
               </p>
             </Reveal>
             <Reveal delay={0.1}>
               <h1 className="max-w-5xl text-balance font-sans text-[clamp(3.25rem,8.4vw,8.4rem)] font-semibold leading-[0.9] tracking-[-0.065em]">
-                Digital products,
+                Productos digitales,
                 <span className="block font-display font-normal italic tracking-[-0.035em] text-[#DFD0B8]">
-                  built with intent.
+                  construidos con intención.
                 </span>
               </h1>
             </Reveal>
             <Reveal delay={0.18}>
               <div className="mt-8 grid gap-7 border-t border-white/15 pt-7 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
                 <p className="max-w-2xl text-base leading-7 text-white/67 sm:text-lg sm:leading-8">
-                  I design and develop modern websites, web applications, and
-                  software-focused solutions with an emphasis on function,
-                  performance, and a clear user experience.
+                  Diseño y desarrollo sitios web modernos, aplicaciones web y
+                  soluciones de software enfocadas en la funcionalidad, el
+                  rendimiento y una experiencia de usuario clara.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <a
                     href="#projects"
                     className="group inline-flex min-h-12 items-center gap-3 rounded-xl bg-[#DFD0B8] px-5 py-3 text-sm font-bold text-[#222831] transition-all hover:-translate-y-0.5 hover:bg-[#EEEEEE] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                   >
-                    Explore my projects
+                    Explora mis proyectos
                     <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
                   </a>
                   <a
                     href="#contact"
                     className="group inline-flex min-h-12 items-center gap-3 rounded-xl border border-white/20 px-5 py-3 text-sm font-bold text-[#EEEEEE] transition-all hover:-translate-y-0.5 hover:border-white/50 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DFD0B8]"
                   >
-                    Get in touch
+                    Contáctame
                     <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </a>
                 </div>
@@ -74,7 +74,7 @@ export function Hero() {
                 <div className="relative h-full overflow-hidden rounded-[1.5rem]">
                   <Image
                     src={armandoImage}
-                    alt="Portrait of Armando Cardona Lara"
+                    alt="Retrato de Armando Cardona Lara"
                     fill
                     priority
                     sizes="(max-width: 1024px) 448px, 360px"
@@ -85,7 +85,7 @@ export function Hero() {
                 </div>
                 <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/15 bg-[#222831]/75 p-4 backdrop-blur-md">
                   <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#DFD0B8]">
-                    Current focus
+                    Enfoque actual
                   </p>
                   <ul className="mt-3 space-y-2 text-sm text-white/78">
                     {focusAreas.map((area) => (
@@ -97,8 +97,8 @@ export function Hero() {
                 </div>
               </div>
               <div className="absolute -right-3 -top-3 grid h-16 w-16 place-items-center rounded-2xl border border-[#948979]/40 bg-[#DFD0B8] font-mono text-[10px] font-bold uppercase tracking-wider text-[#222831] shadow-xl sm:-right-5 sm:-top-5">
-                Build
-                <br /> / Ship
+                Crear
+                <br /> / Lanzar
               </div>
             </div>
           </Reveal>

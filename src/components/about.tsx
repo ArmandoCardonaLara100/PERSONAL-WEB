@@ -3,15 +3,15 @@ import { Reveal } from "@/components/reveal";
 
 const skillGroups = [
   {
-    label: "Core",
+    label: "Fundamentos",
     skills: ["HTML", "CSS", "JavaScript", "Python"],
   },
   {
-    label: "Application",
+    label: "Aplicación",
     skills: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
   },
   {
-    label: "Platform",
+    label: "Plataforma",
     skills: ["Supabase", "PostgreSQL", "Git", "Vercel"],
   },
 ];
@@ -20,13 +20,13 @@ const education = [
   {
     platform: "Codecademy",
     description:
-      "Programming and web development coursework focused on foundational concepts and practical implementation.",
+      "Formación en programación y desarrollo web enfocada en conceptos fundamentales y su implementación práctica.",
     url: "https://www.codecademy.com",
   },
   {
     platform: "Udemy",
     description:
-      "Independent technical training supporting continued development across programming and modern web technologies.",
+      "Formación técnica independiente para continuar desarrollándome en programación y tecnologías web modernas.",
     url: "https://www.udemy.com",
   },
 ];
@@ -37,11 +37,11 @@ export function About() {
       <div className="grid gap-12 lg:grid-cols-[0.38fr_0.62fr] lg:gap-20">
         <Reveal>
           <div className="lg:sticky lg:top-32">
-            <p className="section-kicker">About / Profile</p>
+            <p className="section-kicker">Sobre mí / Perfil</p>
             <h2 className="section-title mt-5">
-              Thoughtful code.
+              Código con propósito.
               <span className="block font-display font-normal italic text-accent-strong">
-                Useful outcomes.
+                Resultados útiles.
               </span>
             </h2>
           </div>
@@ -50,22 +50,22 @@ export function About() {
         <div>
           <Reveal>
             <p className="max-w-3xl text-pretty text-[clamp(1.4rem,2.5vw,2.25rem)] font-medium leading-[1.35] tracking-[-0.025em] text-foreground">
-              I specialize in web development, creating responsive websites,
-              web applications, and software-oriented projects that balance
-              functionality, visual clarity, and reliable performance.
+              Me especializo en desarrollo web y creo sitios responsivos,
+              aplicaciones web y proyectos orientados al software que equilibran
+              funcionalidad, claridad visual y rendimiento confiable.
             </p>
           </Reveal>
           <Reveal delay={0.08}>
             <div className="mt-8 grid gap-6 border-t border-border pt-8 text-base leading-8 text-muted md:grid-cols-2">
               <p>
-                My technical foundation is built around HTML, CSS, and Python,
-                and has expanded through real projects using JavaScript,
-                TypeScript, React, Next.js, and database-backed services.
+                Mi base técnica se construye sobre HTML, CSS y Python, y se ha
+                ampliado mediante proyectos reales con JavaScript, TypeScript,
+                React, Next.js y servicios respaldados por bases de datos.
               </p>
               <p>
-                I approach each project as a complete product: the interface
-                should communicate clearly, adapt naturally to every screen,
-                and support the people who use it without unnecessary friction.
+                Abordo cada proyecto como un producto completo: la interfaz
+                debe comunicar con claridad, adaptarse naturalmente a cada
+                pantalla y ayudar a sus usuarios sin fricciones innecesarias.
               </p>
             </div>
           </Reveal>
@@ -76,14 +76,14 @@ export function About() {
         <Reveal>
           <div className="flex flex-col gap-5 border-b border-border pb-8 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="section-kicker">Skills / Education</p>
+              <p className="section-kicker">Habilidades / Formación</p>
               <h2 className="mt-4 text-[clamp(2.25rem,5vw,4.75rem)] font-semibold leading-none tracking-[-0.055em]">
-                A practical, evolving toolkit.
+                Un conjunto de herramientas práctico y en evolución.
               </h2>
             </div>
             <p className="max-w-md text-sm leading-6 text-muted">
-              Technologies listed here are supported by the work in my public
-              repositories and deployed projects.
+              Las tecnologías listadas aquí están respaldadas por el trabajo en
+              mis repositorios públicos y proyectos desplegados.
             </p>
           </div>
         </Reveal>
@@ -121,11 +121,11 @@ export function About() {
             <div>
               <BookOpen className="h-7 w-7 text-accent-strong" strokeWidth={1.5} />
               <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em]">
-                Continuing education
+                Formación continua
               </h3>
               <p className="mt-3 max-w-sm text-sm leading-6 text-muted">
-                Ongoing coursework supports the skills I apply in active
-                development work. No unverified credentials or dates are listed.
+                La formación continua respalda las habilidades que aplico en mi
+                trabajo de desarrollo. No se incluyen credenciales ni fechas no verificadas.
               </p>
             </div>
           </Reveal>

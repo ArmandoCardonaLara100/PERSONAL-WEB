@@ -14,7 +14,7 @@ function ProjectLinks({ project }: { project: Project }) {
           rel="noopener noreferrer"
           className="group inline-flex min-h-11 items-center gap-2 rounded-xl bg-foreground px-4 py-2.5 text-sm font-bold text-background transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
-          Visit website
+          Visitar sitio
           <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </a>
       ) : null}
@@ -26,7 +26,7 @@ function ProjectLinks({ project }: { project: Project }) {
           className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-border px-4 py-2.5 text-sm font-bold transition-all hover:-translate-y-0.5 hover:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
           <GitHubIcon className="h-4 w-4" />
-          Source
+          Código fuente
         </a>
       ) : null}
     </div>
@@ -139,17 +139,17 @@ export function Projects() {
         <Reveal>
           <div className="grid gap-7 pb-10 md:grid-cols-[1fr_auto] md:items-end">
             <div>
-              <p className="section-kicker">Selected work / 2026</p>
+              <p className="section-kicker">Trabajo seleccionado / 2026</p>
               <h2 className="section-title mt-5 max-w-4xl">
-                Real products.
+                Productos reales.
                 <span className="block font-display font-normal italic text-accent-strong">
-                  Different problems, considered solutions.
+                  Problemas distintos, soluciones pensadas.
                 </span>
               </h2>
             </div>
             <p className="max-w-sm text-sm leading-6 text-muted md:text-right">
-              Every preview is captured from the real project. Technology and
-              feature details are verified against the source repositories.
+              Cada vista previa fue capturada del proyecto real. Las tecnologías
+              y funcionalidades están verificadas contra los repositorios fuente.
             </p>
           </div>
         </Reveal>

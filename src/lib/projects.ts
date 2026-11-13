@@ -23,14 +23,14 @@ export const projects: Project[] = [
   {
     number: "01",
     name: "TRADEDATA",
-    category: "Trading analytics platform",
+    category: "Plataforma de análisis de trading",
     description:
-      "A private trading journal and probability workbench that turns raw operations into performance statistics, equity and drawdown analysis, calendar views, and Monte Carlo simulations.",
+      "Un diario privado de trading y espacio de análisis de probabilidades que convierte las operaciones en estadísticas de rendimiento, análisis de capital y drawdown, vistas de calendario y simulaciones de Monte Carlo.",
     image: tradeDataImage,
     imageAlt:
-      "TRADEDATA landing page showing the trading analytics dashboard preview",
+      "Página principal de TRADEDATA mostrando la vista previa del panel de análisis de trading",
     stack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Recharts"],
-    highlights: ["Trading journal", "Performance analytics", "Monte Carlo simulation"],
+    highlights: ["Diario de trading", "Análisis de rendimiento", "Simulación de Monte Carlo"],
     liveUrl: "https://www.tradingdata.tech",
     githubUrl: "https://github.com/ArmandoCardonaLara100/TRADEDATA",
     layout: "featured",
@@ -38,14 +38,14 @@ export const projects: Project[] = [
   {
     number: "02",
     name: "ARQCA Arquitectura",
-    category: "Architectural portfolio",
+    category: "Portafolio de arquitectura",
     description:
-      "A visual portfolio for an architecture practice, designed around built work, detailed project galleries, services, and direct client contact across responsive layouts.",
+      "Un portafolio visual para un estudio de arquitectura, diseñado alrededor de obras realizadas, galerías detalladas de proyectos, servicios y contacto directo con clientes en estructuras responsivas.",
     image: arqcaImage,
     imageAlt:
-      "ARQCA architecture portfolio homepage with a contemporary residence",
+      "Página principal del portafolio de arquitectura ARQCA con una residencia contemporánea",
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Motion"],
-    highlights: ["Project galleries", "Responsive presentation", "Static performance"],
+    highlights: ["Galerías de proyectos", "Presentación responsiva", "Rendimiento estático"],
     liveUrl: "https://www.arqcaarquitectura.com",
     githubUrl: "https://github.com/ArmandoCardonaLara100/ARQCA",
     layout: "standard",
@@ -53,14 +53,14 @@ export const projects: Project[] = [
   {
     number: "03",
     name: "PsiConnect",
-    category: "Mental-health practice platform",
+    category: "Plataforma para práctica de salud mental",
     description:
-      "A public practice website paired with a secure therapist and patient portal for clinical records, private file exchange, role-based access, and real-time updates.",
+      "Un sitio público para una práctica profesional acompañado de un portal seguro para terapeutas y pacientes, con expedientes clínicos, intercambio privado de archivos, acceso por roles y actualizaciones en tiempo real.",
     image: psiConnectImage,
     imageAlt:
-      "PsiConnect public practice website for psychotherapist Claudia Yanet Lara Gómez",
+      "Sitio público de PsiConnect para la psicoterapeuta Claudia Yanet Lara Gómez",
     stack: ["Next.js", "TypeScript", "Supabase", "Drizzle ORM", "Auth.js"],
-    highlights: ["Secure patient portal", "Clinical records", "Realtime updates"],
+    highlights: ["Portal seguro para pacientes", "Expedientes clínicos", "Actualizaciones en tiempo real"],
     liveUrl: "https://psicologaclaudialago.com",
     githubUrl: "https://github.com/ArmandoCardonaLara100/CLAUDIA-YANET",
     layout: "standard",
@@ -68,14 +68,14 @@ export const projects: Project[] = [
   {
     number: "04",
     name: "CRDN Arquitectura Comercial",
-    category: "Commercial architecture website",
+    category: "Sitio de arquitectura comercial",
     description:
-      "An editorial website for a retail and commercial design studio, combining project case studies, service pathways, insights, and a conversion-focused contact experience.",
+      "Un sitio editorial para un estudio de diseño comercial y retail que combina casos de estudio, rutas de servicio, artículos y una experiencia de contacto orientada a la conversión.",
     image: crdnImage,
     imageAlt:
-      "CRDN commercial architecture website with an editorial typography-led hero",
+      "Sitio de arquitectura comercial CRDN con un encabezado editorial guiado por la tipografía",
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Radix UI"],
-    highlights: ["Editorial system", "Case-study presentation", "Accessible interactions"],
+    highlights: ["Sistema editorial", "Presentación de casos de estudio", "Interacciones accesibles"],
     liveUrl: "https://www.crdnarquitecturacomercial.com",
     githubUrl: "https://github.com/ArmandoCardonaLara100/CRDN",
     layout: "featured",
@@ -83,13 +83,13 @@ export const projects: Project[] = [
   {
     number: "05",
     name: "Sparky.CL",
-    category: "Business operations platform",
+    category: "Plataforma de operaciones empresariales",
     description:
-      "A role-aware operations system for managing clients, products, service tickets, debts, invoices, cash closeouts, and PDF records from one responsive workspace.",
+      "Un sistema de operaciones con roles para gestionar clientes, productos, tickets de servicio, deudas, facturas, cierres de caja y registros PDF desde un solo espacio de trabajo responsivo.",
     image: sparkyImage,
-    imageAlt: "Sparky.CL business management dashboard",
+    imageAlt: "Panel de gestión empresarial de Sparky.CL",
     stack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Zod"],
-    highlights: ["Client and ticket management", "PDF billing", "Role-based access"],
+    highlights: ["Gestión de clientes y tickets", "Facturación en PDF", "Acceso por roles"],
     githubUrl: "https://github.com/ArmandoCardonaLara100/SPARKY-CL",
     layout: "standard",
   },
