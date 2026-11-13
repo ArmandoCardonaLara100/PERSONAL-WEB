@@ -22,9 +22,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://portfolio-sigma-sandy-am3oyn5c1v.vercel.app",
-  ),
+  metadataBase: new URL("https://armandocl.vercel.app"),
   title: "Armando Cardona Lara | Desarrollador web y de software",
   description:
     "Portafolio de Armando Cardona Lara, desarrollador web y de software que crea sitios responsivos, plataformas de datos y productos digitales prácticos.",
